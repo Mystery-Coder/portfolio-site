@@ -29,7 +29,7 @@ export default function Projects() {
 						desc: `
 						A backend written in GoLang to generate a stoic quote SVG. Inspired from Github Readme Quotes, Uses stoic quotes from Stoic Quote API.`,
 						github: "https://github.com/Mystery-Coder/go-stoic-quotes",
-						demo: "https://go-stoic-quotes-production.up.railway.app/stoic-quote-svg?theme=random",
+						demo: "https://go-stoic-quotes-production.up.railway.app/",
 					},
 				].map(({ title, skills, desc, github, demo }) => (
 					<div
