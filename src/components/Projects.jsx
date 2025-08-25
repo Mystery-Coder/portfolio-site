@@ -13,7 +13,7 @@ export default function Projects() {
 						desc: `QuizzoAngular is a modern quiz application built using 
 					Angular and backed by a RESTful API developed in Go with a PostgreSQL database.`,
 						github: "https://github.com/Mystery-Coder/quizzo-angular",
-						demo: "",
+						demo: "https://quizzo-angular.vercel.app/",
 					},
 					{
 						title: "Tourism Promotion App",
