@@ -63,8 +63,8 @@ function App() {
 					Hi, I'm <span className="text-blue-400">Srikar</span>
 				</h1>
 				<p className="text-2xl text-gray-700 mb-6">
-					Computer Science student, learning mordern technologies to
-					build real world solutions
+					Computer Science student at RVCE, learning mordern
+					technologies to build real world solutions
 				</p>
 
 				<div className="flex flex-row gap-4">

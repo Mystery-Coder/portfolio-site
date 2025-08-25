@@ -12,7 +12,7 @@ export default function About() {
 					<p>
 						I'm an aspiring software developer who enjoys
 						programming and building useful products, currently
-						pursuing my Computer Science degree.
+						pursuing my Computer Science degree at RVCE, Bangalore.
 					</p>
 					<br />
 					<p>
