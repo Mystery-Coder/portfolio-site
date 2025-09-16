@@ -55,7 +55,7 @@ function App() {
 
 			<div className="flex flex-col items-center text-center m-30 p-6">
 				<img
-					src="/me.jpg"
+					src="/me.webp"
 					alt="Srikar"
 					className="w-40 h-40 rounded-full object-cover mb-6 shadow-md"
 				/>
