@@ -3,6 +3,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import useDarkMode from "./hooks/useDarkMode";
 
 // Smooth scroll function
 const scrollToSection = (sectionId) => {
@@ -13,10 +14,12 @@ const scrollToSection = (sectionId) => {
 };
 
 function App() {
+	const [darkMode, setDarkMode] = useDarkMode();
+
 	return (
 		<>
 			{/* Navbar */}
-			<nav className="bg-gray-900 shadow-md sticky top-0 z-50">
+			<nav className="bg-gray-900 dark:bg-gray-950 shadow-md sticky top-0 z-50">
 				<div className="w-full px-4">
 					<div className="flex justify-between h-16 items-center">
 						<div className="flex-shrink-0 text-2xl font-bold text-blue-400">
@@ -48,22 +51,29 @@ function App() {
 							>
 								Contact Me
 							</button>
+							<button
+								onClick={() => setDarkMode(!darkMode)}
+								className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-black dark:text-white"
+							>
+								{darkMode ? "🌙 Dark" : "☀️ Light"}
+							</button>
 						</div>
 					</div>
 				</div>
 			</nav>
 
-			<div className="flex flex-col items-center text-center m-30 p-6">
+			{/* Hero Section */}
+			<div className="flex flex-col items-center text-center m-30 p-6 bg-white  transition-colors duration-300">
 				<img
 					src="/me.webp"
 					alt="Srikar"
 					className="w-40 h-40 rounded-full object-cover mb-6 shadow-md"
 				/>
-				<h1 className="text-5xl sm:text-7xl font-bold text-gray-900 mb-4">
-					Hi, I'm <span className="text-blue-400">Srikar</span>
+				<h1 className="text-5xl sm:text-7xl font-bold text-gray-900  mb-4">
+					Hi, I'm <span className="text-blue-600">Srikar</span>
 				</h1>
 				<p className="text-2xl text-gray-700 mb-6">
-					Computer Science student at RVCE, learning mordern
+					Computer Science student at RVCE, learning modern
 					technologies to build real world solutions
 				</p>
 
@@ -83,7 +93,8 @@ function App() {
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center space-y-20 bg-gray-100 pb-20">
+			{/* Main Sections */}
+			<div className="flex flex-col items-center space-y-20 bg-gray-100 pb-20 transition-colors duration-300">
 				<div id="about" className="scroll-mt-20 w-full max-w-4xl px-4">
 					<About />
 				</div>
