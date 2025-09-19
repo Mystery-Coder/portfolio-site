@@ -34,7 +34,7 @@ export default function Projects() {
 				].map(({ title, skills, desc, github, demo }) => (
 					<div
 						key={title}
-						className="bg-white rounded-xl shadow p-6 w-full sm:w-[300px] text-center"
+						className="bg-white rounded-xl shadow p-6 w-full sm:w-[300px] text-center dark:bg-black dark:text-white"
 					>
 						<h3 className="text-xl font-bold mb-4">{title}</h3>
 						<div className="text-lg mb-4">{desc}</div>
@@ -42,10 +42,10 @@ export default function Projects() {
 						<div className="flex flex-row gap-4 m-2 p-2">
 							{github && (
 								<a
-									href={github}
+									href="https://github.com/Mystery-Coder"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-gray-800 hover:text-black text-3xl"
+									className="text-gray-800 hover:text-black dark:text-white dark:hover:text-gray-300 text-3xl"
 								>
 									<FaGithub />
 								</a>

@@ -33,16 +33,9 @@ export default function About() {
 							href="https://github.com/Mystery-Coder"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-800 hover:text-black text-3xl"
+							className="text-gray-800 hover:text-black dark:text-white dark:hover:text-gray-300 text-3xl"
 						>
-							<a
-								href="https://github.com/Mystery-Coder"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-800 hover:text-black dark:text-white dark:hover:text-gray-300 text-3xl"
-							>
-								<FaGithub />
-							</a>
+							<FaGithub />
 						</a>
 						<a
 							href="https://www.linkedin.com/in/srikar-rao-57a60732a"
@@ -58,11 +51,18 @@ export default function About() {
 				<div className="md:w-1/2">
 					<h3 className="text-3xl font-bold mb-2">Tech Stack</h3>
 					<a href="https://skillicons.dev" target="_blank">
+						{/* Light version */}
 						<img
-							src="https://skillicons.dev/icons?i=html,css,js,ts,react,angular,p5js,processing,flutter,dart,express,
-						python,go,c,cpp,bash,arduino,raspberrypi&theme=dark&perline=6"
-							alt="Tech Stack Icons"
-							className="w-full h-auto"
+							src="https://skillicons.dev/icons?i=html,css,js,ts,react,angular,p5js,processing,flutter,dart,express,python,go,c,cpp,bash,arduino,raspberrypi&theme=light&perline=6"
+							alt="Tech Stack Icons Light"
+							className="w-full h-auto dark:hidden"
+						/>
+
+						{/* Dark version */}
+						<img
+							src="https://skillicons.dev/icons?i=html,css,js,ts,react,angular,p5js,processing,flutter,dart,express,python,go,c,cpp,bash,arduino,raspberrypi&theme=dark&perline=6"
+							alt="Tech Stack Icons Dark"
+							className="w-full h-auto hidden dark:block"
 						/>
 					</a>
 				</div>
