@@ -39,9 +39,9 @@ export default function Skills() {
 				].map(({ title, skills }) => (
 					<div
 						key={title}
-						className="bg-white rounded-xl shadow p-6 w-full sm:w-[300px] text-center"
+						className="bg-white rounded-xl shadow p-6 w-full sm:w-[300px] text-center dark:bg-black dark:text-white"
 					>
-						<h3 className="text-xl font-bold mb-4">{title}</h3>
+						<h3 className="text-xl font-bold mb-4 dark">{title}</h3>
 						<div className="flex flex-wrap justify-center gap-2">
 							{skills.map((skill) => (
 								<span
