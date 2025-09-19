@@ -1,14 +1,17 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import useDarkMode from "../hooks/useDarkMode";
 
 export default function About() {
+	const [darkMode, setDarkMode] = useDarkMode();
+
 	return (
-		<div className="border p-6 max-w-4xl mx-auto mt-10 rounded-lg shadow-md bg-white">
-			<h2 className="text-3xl font-semibold text-gray-900 mb-2">
+		<div className="border p-6 max-w-4xl mx-auto mt-10 rounded-lg shadow-md bg-white dark:bg-black dark:text-white">
+			<h2 className="text-3xl font-semibold text-gray-900 mb-2 dark:text-white">
 				About Me
 			</h2>
 
-			<div className="flex flex-col md:flex-row gap-6">
-				<div className="md:w-1/2 text-gray-800">
+			<div className="flex flex-col md:flex-row gap-6 dark:text-white">
+				<div className="md:w-1/2 text-gray-800 dark:text-white">
 					<p>
 						I'm an aspiring software developer who enjoys
 						programming and building useful products, currently
@@ -32,7 +35,14 @@ export default function About() {
 							rel="noopener noreferrer"
 							className="text-gray-800 hover:text-black text-3xl"
 						>
-							<FaGithub />
+							<a
+								href="https://github.com/Mystery-Coder"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-gray-800 hover:text-black dark:text-white dark:hover:text-gray-300 text-3xl"
+							>
+								<FaGithub />
+							</a>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/srikar-rao-57a60732a"
@@ -50,7 +60,7 @@ export default function About() {
 					<a href="https://skillicons.dev" target="_blank">
 						<img
 							src="https://skillicons.dev/icons?i=html,css,js,ts,react,angular,p5js,processing,flutter,dart,express,
-						python,go,c,cpp,bash,arduino,raspberrypi&theme=light&perline=6"
+						python,go,c,cpp,bash,arduino,raspberrypi&theme=dark&perline=6"
 							alt="Tech Stack Icons"
 							className="w-full h-auto"
 						/>
