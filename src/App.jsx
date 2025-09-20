@@ -94,7 +94,7 @@ function App() {
 			</div>
 
 			{/* Main Sections */}
-			<div className="flex flex-col items-center space-y-20 bg-gray-100 pb-20 transition-colors duration-300">
+			<div className="flex flex-col items-center space-y-20 bg-gray-100 dark:bg-gray-600 pb-20 transition-colors duration-300">
 				<div id="about" className="scroll-mt-20 w-full max-w-4xl px-4">
 					<About />
 				</div>
