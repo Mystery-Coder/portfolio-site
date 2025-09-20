@@ -5,7 +5,7 @@ export default function About() {
 	const [darkMode, setDarkMode] = useDarkMode();
 
 	return (
-		<div className="border p-6 max-w-4xl mx-auto mt-10 rounded-lg shadow-md bg-white dark:bg-black dark:text-white">
+		<div className="border p-6 max-w-4xl mx-auto mt-10 rounded-lg shadow-md bg-white dark:bg-gray-800 dark:text-white">
 			<h2 className="text-3xl font-semibold text-gray-900 mb-2 dark:text-white">
 				About Me
 			</h2>

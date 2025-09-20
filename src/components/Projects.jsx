@@ -2,10 +2,10 @@ import { FaLink, FaGithub } from "react-icons/fa";
 export default function Projects() {
 	return (
 		<div className="w-full px-4">
-			<h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
+			<h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center dark:text-white">
 				Projects
 			</h2>
-			<div className="flex flex-wrap justify-center gap-6 px-4 py-8 bg-gray-100">
+			<div className="flex flex-wrap justify-center gap-6 px-4 py-8 bg-gray-100 dark:bg-gray-600">
 				{[
 					{
 						title: "QuizzoAngular",
@@ -34,7 +34,7 @@ export default function Projects() {
 				].map(({ title, skills, desc, github, demo }) => (
 					<div
 						key={title}
-						className="bg-white rounded-xl shadow p-6 w-full sm:w-[300px] text-center dark:bg-black dark:text-white"
+						className="bg-white rounded-xl shadow p-6 w-full sm:w-[300px] text-center dark:bg-gray-800 dark:text-white"
 					>
 						<h3 className="text-xl font-bold mb-4">{title}</h3>
 						<div className="text-lg mb-4">{desc}</div>

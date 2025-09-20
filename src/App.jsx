@@ -63,7 +63,7 @@ function App() {
 			</nav>
 
 			{/* Hero Section */}
-			<div className="flex flex-col items-center text-center m-30 p-6 bg-white  transition-colors duration-300">
+			<div className="flex flex-col items-center text-center m-30 p-6  transition-colors duration-300">
 				<img
 					src="/me.webp"
 					alt="Srikar"
