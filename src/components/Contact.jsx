@@ -3,7 +3,7 @@ import { CiMail } from "react-icons/ci";
 
 export default function Contact() {
 	return (
-		<div className="p-6 text-center text-gray-800">
+		<div className="p-6 text-center text-gray-800 dark:text-white">
 			<h2 className="text-4xl font-semibold mb-4">Contact Me</h2>
 			<div className="text-2xl mb-6">
 				Connect with me on LinkedIn or email me
@@ -13,7 +13,7 @@ export default function Contact() {
 			<div className="flex justify-center items-center gap-6 text-3xl">
 				<a
 					href="mailto:srikar0811@gmail.com"
-					className="text-gray-700 hover:text-gray-900 transition-colors"
+					className="text-gray-700 dark:text-gray-800 hover:text-gray-900 transition-colors"
 					aria-label="Email"
 				>
 					<CiMail />
