@@ -63,16 +63,16 @@ function App() {
 			</nav>
 
 			{/* Hero Section */}
-			<div className="flex flex-col items-center text-center m-30 p-6  transition-colors duration-300">
+			<div className="flex flex-col items-center text-center p-38 transition-colors duration-300 dark:bg-gray-700">
 				<img
 					src="/me.webp"
 					alt="Srikar"
 					className="w-40 h-40 rounded-full object-cover mb-6 shadow-md"
 				/>
-				<h1 className="text-5xl sm:text-7xl font-bold text-gray-900  mb-4">
+				<h1 className="text-5xl sm:text-7xl font-bold text-gray-900 dark:text-white  mb-4">
 					Hi, I'm <span className="text-blue-600">Srikar</span>
 				</h1>
-				<p className="text-2xl text-gray-700 mb-6">
+				<p className="text-2xl text-gray-700 mb-6 dark:text-white">
 					Computer Science student at RVCE, learning modern
 					technologies to build real world solutions
 				</p>
