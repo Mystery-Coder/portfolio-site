@@ -73,8 +73,9 @@ function App() {
 					Hi, I'm <span className="text-blue-600">Srikar</span>
 				</h1>
 				<p className="text-2xl text-gray-700 mb-6 dark:text-white">
-					Computer Science student at RVCE, learning modern
-					technologies to build real world solutions
+					Computer Science student at RVCE passionate about leveraging
+					modern technologies to create impactful real-world
+					solutions.
 				</p>
 
 				<div className="flex flex-row gap-4">
