@@ -13,19 +13,20 @@ export default function About() {
 			<div className="flex flex-col md:flex-row gap-6 dark:text-white">
 				<div className="md:w-1/2 text-gray-800 dark:text-white">
 					<p>
-						I'm an aspiring software developer who enjoys
-						programming and building useful products, currently
-						pursuing my Computer Science degree at RVCE, Bangalore.
+						I am an aspiring software developer pursuing a Computer
+						Science degree at RVCE, Bangalore. I have a passion for
+						programming and building practical, user-centered
+						products.
 					</p>
 					<br />
 					<p>
-						I enjoy working with React, Express.js and modern web
-						technologies to create interactive user interfaces. For
-						cross-platform development, I love using Flutter and
-						Dart, which let me build beautiful native apps
-						efficiently. On the backend, I'm particularly interested
-						in using Go (Golang) for building fast and scalable
-						APIs.
+						I specialize in modern web technologies such as React
+						and Express.js to create engaging and interactive user
+						interfaces. For cross-platform mobile development, I
+						prefer Flutter and Dart, enabling me to craft beautiful
+						and efficient native applications. On the backend, I'm
+						focus on Go (Golang) to build high-performance, scalable
+						APIs that power robust solutions.
 					</p>
 
 					<div className="flex flex-row gap-4 mt-4">
