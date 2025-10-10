@@ -24,9 +24,10 @@ export default function About() {
 						and Express.js to create engaging and interactive user
 						interfaces. For cross-platform mobile development, I
 						prefer Flutter and Dart, enabling me to craft beautiful
-						and efficient native applications. On the backend, I'm currently
-						focusing on Go (Golang) to build high-performance, scalable
-						APIs that power robust solutions.
+						and efficient native applications. On the backend, I'm
+						currently interested in Go (Golang) to build
+						high-performance, scalable APIs that power robust
+						solutions.
 					</p>
 
 					<div className="flex flex-row gap-4 mt-4">
