@@ -1,6 +1,6 @@
-# Porfolio Site
+# 🌐 Portfolio Site
 
-My portfolio site to showcase projects.
-Made with React, Tailwind.
+My personal portfolio to showcase projects and skills.
+Built with React and Tailwind CSS.
 
-Hosted at <a href="https://srikar.is-a.dev">srikar.is-a.dev</a>
+🔗 Live: <a href="https://srikar.is-a.dev">srikar.is-a.dev</a>
