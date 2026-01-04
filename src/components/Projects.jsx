@@ -15,13 +15,23 @@ export default function Projects() {
 		const languageSizes = {};
 		const languageColors = {};
 
+		// Repos to exclude from language stats (often have generated/bundled code)
+		const excludedRepos = [
+			"XAI-AIML",
+			"ML-Stress-Detection",
+			"XAI-Project",
+		];
+		const excludedLanguages = ["CSS", "HTML", "Jupyter Notebook"];
 		repos.forEach((repo) => {
 			if (repo.isFork) return; // Skip forks
+			if (excludedRepos.includes(repo.name)) return;
 
 			repo.languages?.edges?.forEach((edge) => {
 				const name = edge.node.name;
 				const size = edge.size;
 				const color = edge.node.color;
+
+				if (excludedRepos.includes(name)) return;
 
 				languageSizes[name] = (languageSizes[name] || 0) + size;
 				if (color) {
@@ -43,7 +53,7 @@ export default function Projects() {
 				color: languageColors[name] || "#808080",
 			}))
 			.sort((a, b) => b.size - a.size)
-			.slice(0, 5); // Top 5 languages
+			.slice(0, 5);
 
 		return stats;
 	};
