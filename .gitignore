@@ -25,3 +25,6 @@ dist-ssr
 
 # Data at build time
 src/data/
+
+# Local vercel
+.vercel/
