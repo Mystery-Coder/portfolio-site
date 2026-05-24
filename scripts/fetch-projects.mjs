@@ -18,7 +18,6 @@ function calculateLanguageStats(repos) {
 			const name = edge.node.name;
 			const size = edge.size;
 			const color = edge.node.color;
-			excludedRepos.includes(name);
 			languageSizes[name] = (languageSizes[name] || 0) + size;
 			if (color) languageColors[name] = color;
 		});
