@@ -1,3 +1,4 @@
 {
-	"framework": "vite"
+	"framework": "vite",
+	"devCommand": "node scripts/fetch-projects.mjs && vite --port $PORT"
 }
