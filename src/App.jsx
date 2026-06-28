@@ -27,6 +27,11 @@ function App() {
 						</div>
 
 						<div className="hidden md:flex space-x-6">
+							<button className="text-white hover:text-blue-400">
+								<a href="https://mystery-coder.github.io/blog/">
+									Blog
+								</a>
+							</button>
 							<button
 								onClick={() => scrollToSection("about")}
 								className="text-white hover:text-blue-400"
