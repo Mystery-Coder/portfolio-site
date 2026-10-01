@@ -105,7 +105,7 @@ export function Portfolio({
 					<div className="hero-aside">
 						<div className="portrait-frame">
 							<Image
-								src="/me.jpg"
+								src="/me.JPG"
 								alt="Portrait of Srikar Rao H M"
 								width={430}
 								height={520}
