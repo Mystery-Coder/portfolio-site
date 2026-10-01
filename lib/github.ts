@@ -24,10 +24,13 @@ export const REVALIDATE_SECONDS = 3600;
 
 /** Repos whose language bytes would skew the "most used languages" chart. */
 const EXCLUDED_REPOS = new Set([
-  "XAI-AIML",
-  "ML-Stress-Detection",
-  "XAI-Project",
+	"XAI-AIML",
+	"ML-Stress-Detection",
+	"XAI-Project",
 ]);
+
+/** Languages that should not influence the portfolio breakdown. */
+const EXCLUDED_LANGUAGES = new Set(["TeX"]);
 
 type LanguageEdge = {
   size: number;
@@ -89,9 +92,10 @@ export function calculateLanguageStats(
     if (repo.isFork) continue;
     if (EXCLUDED_REPOS.has(repo.name ?? "")) continue;
 
-    for (const edge of repo.languages?.edges ?? []) {
-      const { name } = edge.node;
-      sizes.set(name, (sizes.get(name) ?? 0) + edge.size);
+		for (const edge of repo.languages?.edges ?? []) {
+			const { name } = edge.node;
+			if (EXCLUDED_LANGUAGES.has(name)) continue;
+			sizes.set(name, (sizes.get(name) ?? 0) + edge.size);
       if (edge.node.color) colors.set(name, edge.node.color);
     }
   }

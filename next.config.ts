@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
-    // /public/me.webp is served locally, so no remotePatterns are required.
+			// The portrait is served locally, so no remotePatterns are required.
   },
 };
 
