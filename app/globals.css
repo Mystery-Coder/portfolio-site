@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/*
+ * Class-based dark mode. next-themes toggles `.dark` on <html> via a blocking
+ * script in <head>, so there is no flash of the wrong theme and no hydration
+ * mismatch.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    /* Anchor navigation from the navbar/hero scrolls smoothly. */
+    scroll-behavior: smooth;
+  }
+
+  /* Respect users who opt out of motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}

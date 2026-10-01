@@ -8,7 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+.next
+out
+build
 dist-ssr
 *.local
 
@@ -23,8 +25,12 @@ dist-ssr
 *.sln
 *.sw?
 
-# Data at build time
-src/data/
+# Local env files
+.env
+.env*.local
 
 # Local vercel
 .vercel/
+
+# TypeScript incremental build info
+*.tsbuildinfo
